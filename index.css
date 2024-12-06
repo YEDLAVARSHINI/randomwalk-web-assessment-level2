@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffff;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ffff;
+    border: 2px solid #333;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cell.taken {
+    pointer-events: none;
+    color: #999;
+}
+
+.status {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.scorecard {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.restart {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.restart:hover {
+    background-color: #0056b3;
+}
